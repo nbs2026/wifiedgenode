@@ -1,1 +1,24 @@
-
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IoT Sensor Payload Schema v1",
+  "type": "object",
+  "properties": {
+    "temperature": {
+      "type": "number",
+      "description": "Temperature reading in Celsius"
+    },
+    "humidity": {
+      "type": "number",
+      "description": "Relative humidity percentage"
+    },
+    "soil_moisture": {
+      "type": "number",
+      "description": "Soil moisture sensor reading"
+    }
+  },
+  "required": [
+    "temperature",
+    "humidity",
+    "soil_moisture"
+  ]
+}
